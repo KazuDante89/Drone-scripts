@@ -207,7 +207,7 @@ else
 fi
 
 # Make defconfig
-make -j${KEBABS} ${ARGS} "${DEVICE}"-qgki_defconfig
+make -j${KEBABS} ${ARGS} "${DEVICE}"_defconfig
 
 # AOSP Build
 echo "------ Stating AOSP Build ------"

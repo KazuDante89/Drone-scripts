@@ -188,9 +188,9 @@ function pack_image_build() {
         tg_post_error $1
     fi
 
-    cp ${OUT_DIR}/arch/arm64/boot/Image anykernel/kernels/$1
-    cp ${OUT_DIR}/arch/arm64/boot/dts/vendor/qcom/yupik.dtb anykernel/kernels/$1
-    cp ${OUT_DIR}/arch/arm64/boot/dts/vendor/qcom/lisa-sm7325-overlay.dtbo anykernel/kernels/$1
+    cp ${OUT_DIR}/arch/arm64/boot/Image anykernel/$1
+    cp ${OUT_DIR}/arch/arm64/boot/dts/vendor/qcom/yupik.dtb anykernel/$1
+    cp ${OUT_DIR}/arch/arm64/boot/dts/vendor/qcom/lisa-sm7325-overlay.dtbo anykernel/$1
 }
 
 START=$(date +"%s")

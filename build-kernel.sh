@@ -90,9 +90,9 @@ CSUM=$(cksum <<<${COMMIT} | cut -f 1 -d ' ')
 
 # Select LTO or non LTO builds
 if [[ "$@" =~ "lto"* ]]; then
-    VERSION="IMMENSITY-X-${DEVICE^^}-${TYPE}-LTO-${CSUM}-${DATE}"
+    VERSION="Phantom-X-${DEVICE^^}-${TYPE}-LTO-${DATE}"
 else
-    VERSION="IMMENSITY-X-${DEVICE^^}-${TYPE}-${DATE}"
+    VERSION="Phantom-X-${DEVICE^^}-${TYPE}-${DATE}"
 fi
 
 # Export Zip name
